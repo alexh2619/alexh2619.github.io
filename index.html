@@ -1,103 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio | Senior Design & Mini Fab Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Design Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <!-- Dark Mode Toggle -->
+  <button id="mode-toggle">Light</button>
+
   <!-- Header -->
   <header>
-    <h1>James • Portfolio</h1>
+    <h1>InnoLab</h1>
     <nav>
-      <a href="#senior">Senior Design</a>
-      <a href="#mini">Mini Fab</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html">Home</a>
+      <a href="senior-design.html">Senior Design Project</a>
+      <a href="mini-projects.html">Mini Fabrication Projects</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <!-- Hero -->
   <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Explore my Senior Design Project and Mini Fabrication Projects</p>
+    <h1>Welcome to InnoLab</h1>
+    <p>Explore my senior design project, fabrication experiments, and more.</p>
   </section>
 
-  <!-- Senior Design Project -->
-  <section id="senior">
+  <!-- Featured Project -->
+  <section>
+    <h2>Featured Project</h2>
+    <div class="section-content">
+      <div class="text">
+        <h3>Senior Design Project Highlight</h3>
+        <p>
+          My senior design project tackles real-world engineering challenges through
+          innovative design and modern fabrication techniques. Click below to see the 
+          details of each milestone.
+        </p>
+      </div>
+      <div class="image">
+        <span>Image Placeholder</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Senior Design Project Subtopics -->
+  <section>
     <h2>Senior Design Project</h2>
-
-    <div class="section-content">
-      <div class="text">
-        <p><strong>Problem Statement:</strong> Define the challenge and the project’s goals clearly.</p>
+    <div class="subtopic-grid">
+      <div class="subtopic-card">
+        <h4>Problem Statement</h4>
+        <p>Defining the challenge and scope of our work.</p>
       </div>
-      <div class="image">Image Placeholder</div>
-    </div>
-
-    <div class="section-content">
-      <div class="image">Image Placeholder</div>
-      <div class="text">
-        <p><strong>Preliminary Design Review (PDR):</strong> Early design concepts and feasibility analysis.</p>
+      <div class="subtopic-card">
+        <h4>Preliminary Design Review</h4>
+        <p>Initial solutions and early designs.</p>
       </div>
-    </div>
-
-    <div class="section-content">
-      <div class="text">
-        <p><strong>Critical Design Review (CDR):</strong> Finalized design with analysis, testing, and justification.</p>
+      <div class="subtopic-card">
+        <h4>Critical Design Review</h4>
+        <p>Testing and refining the design.</p>
       </div>
-      <div class="image">Image Placeholder</div>
-    </div>
-
-    <div class="section-content">
-      <div class="image">Image Placeholder</div>
-      <div class="text">
-        <p><strong>Final Presentation:</strong> Results, lessons learned, and future recommendations.</p>
+      <div class="subtopic-card">
+        <h4>Final Presentation</h4>
+        <p>Delivering our polished project.</p>
       </div>
     </div>
   </section>
 
-  <!-- Mini Fabrication Projects -->
-  <section id="mini">
+  <!-- Mini Projects -->
+  <section>
     <h2>Mini Fabrication Projects</h2>
     <div class="subtopic-grid">
-      <div class="subtopic-card"><h4>Computer Controlled Cutting</h4></div>
-      <div class="subtopic-card"><h4>Embedded Programming</h4></div>
-      <div class="subtopic-card"><h4>3D Scanning</h4></div>
-      <div class="subtopic-card"><h4>Computer Controlled Machining</h4></div>
-      <div class="subtopic-card"><h4>Electronics Production</h4></div>
-      <div class="subtopic-card"><h4>Molding and Casting</h4></div>
-      <div class="subtopic-card"><h4>Wildcard</h4></div>
+      <div class="subtopic-card">
+        <h4>Computer Controlled Cutting</h4>
+        <p>Laser cutting and vinyl cutting projects.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Embedded Programming</h4>
+        <p>Microcontrollers and custom code.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>3D Scanning</h4>
+        <p>Capturing real-world models.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Computer-Controlled Machining</h4>
+        <p>Milling and machining experiments.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Electronics Production</h4>
+        <p>PCB design and fabrication.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Molding and Casting</h4>
+        <p>Custom shapes and material tests.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Wildcard</h4>
+        <p>Exploring unique projects.</p>
+      </div>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about">
+  <!-- About -->
+  <section>
     <h2>About Me</h2>
-    <div class="section-content">
-      <div class="text">
-        <p>Hi, I’m James — an engineer passionate about design, fabrication, and innovation. I enjoy working on projects that merge creativity with technical precision.</p>
-      </div>
-      <div class="image">Image Placeholder</div>
-    </div>
+    <p>
+      I’m an engineering student passionate about design, innovation, and
+      hands-on fabrication. This portfolio showcases my journey through senior design 
+      and mini projects that sharpen my technical and creative skills.
+    </p>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section>
     <h2>Contact Me</h2>
-    <div class="section-content">
-      <div class="text">
-        <p>Email me at <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-      </div>
-      <div class="image">Image Placeholder</div>
-    </div>
+    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 James | Portfolio</p>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
   </footer>
 
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById('mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = 
+        document.body.classList.contains('dark-mode') ? 'Dark' : 'Light';
+    });
+  </script>
 </body>
 </html>
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me - Alexander Hernandez</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
+</head>
+<body>
+
+  <!-- Dark mode toggle -->
+  <button id="mode-toggle">Dark/Light</button>
+
+  <!-- Header / Top nav bar -->
+  <header>
+    <h1>InnoLab</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#education">Education</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#internships">Internships</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <h1>Hey, I'm Alexander!</h1>
+    <p>I'm a junior at Belen Jesuit in Miami, exploring engineering, design, and environmental projects. 
+    I love hands-on learning, leading clubs, and finding creative solutions that make a real impact.</p>
+  </div>
+
+  <!-- Education section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="section-content">
+      <div class="text">
+        <p><strong>Belen Jesuit Preparatory School</strong>, Miami, FL – Junior</p>
+        <p>GPA: 4.73</p>
+        <p><em>Relevant Coursework:</em> Intro Engineering Design, Honors Principles of Engineering, Honors Design and Innovation, AP Physics 1 & C, AP Calculus AB</p>
+        <p><em>Honors:</em> National Honors Society, Mu Alpha Theta, Science NHS, National English NHS</p>
+        <p><em>Clubs & Sports:</em> Climate Awareness Club, Feed the Heart Club, Varsity Lacrosse</p>
+      </div>
+      <div class="image">
+        Education Image
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership section -->
+  <section id="leadership">
+    <h2>Leadership & Clubs</h2>
+    <div class="subtopic-grid">
+      <div class="subtopic-card">
+        <h4>Climate Awareness Club</h4>
+        <p>President & member since 2022. Organized events with local nonprofits and promoted environmental conservation.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Feed the Heart Club</h4>
+        <p>President & event leader. Led service projects supporting Miami’s homeless community and mentored younger students.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Internships section -->
+  <section id="internships">
+    <h2>Internships</h2>
+    <div class="subtopic-grid">
+      <div class="subtopic-card">
+        <h4>Hazen and Sawyer</h4>
+        <p>Conducted water sampling for PFAS removal projects, wrote reports, and designed technical drawings.</p>
+      </div>
+      <div class="subtopic-card">
+        <h4>Chisholm Architecture</h4>
+        <p>Shadowed architects and marketing staff, visited job sites, and learned about project coordination and client relations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="subtopic-grid">
+      <div class="subtopic-card">Fusion 360 CAD (certified)</div>
+      <div class="subtopic-card">Bluebeam Revu</div>
+      <div class="subtopic-card">Microsoft Excel (basic)</div>
+      <div class="subtopic-card">Fluent in Spanish</div>
+    </div>
+  </section>
+
+  <!-- Footer / Contact -->
+  <footer id="contact">
+    <p>Email: <a href="mailto:ahernandez26@belenwolverines.org">ahernandez26@belenwolverines.org</a></p>
+    <p>Phone: 305-498-1488</p>
+    <p>Location: Miami, FL</p>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById('mode-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+
+</body>
+</html>
