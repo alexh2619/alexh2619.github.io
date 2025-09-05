@@ -5,8 +5,15 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
+@font-face{
+  font-family: 'Aloevera';
+  src: url(Aloevera-OVoWO.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'courier new', sans-serif;
+  font-family: 'Aloevera', sans-serif;
   background-color: #fefefe;
   color: #1c1c1e;
   line-height: 1.6;
