@@ -1,19 +1,24 @@
-/* Import sleek modern font */
+/* Inter via Google Fonts (kept) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* OPTIONAL: Self-host a custom display font (uncomment + provide real file paths)
+@font-face {
+  font-family: 'Aloevera';
+  src: url('/fonts/Aloevera-OVoWO.woff2') format('woff2'),
+       url('/fonts/Aloevera-OVoWO.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*/
 
 /* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-@font-face{
-  font-family: 'vila madalena';
-  src: url(vila\ madalena.otf);
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: 'vilam madalena';
+  /* Use Inter properly with robust fallbacks */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-color: #fefefe;
   color: #1c1c1e;
   line-height: 1.6;
@@ -23,7 +28,9 @@ body {
 
 /* Header with pill-shaped nav */
 header {
-  font-family: '';
+  /* If you want a custom display font for the site title only, use:
+     font-family: 'Aloevera', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,6 +49,9 @@ header h1 {
   font-weight: 700;
   font-size: 1.6rem;
   color: #004d61;
+  /* Example: make just the title use the optional custom font
+     font-family: 'Aloevera', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  */
 }
 
 /* Nav links as pills */
@@ -67,9 +77,9 @@ nav a:hover {
 
 /* Dark mode toggle button */
 #mode-toggle {
-  position: fixed;      /* fixed so it stays at top-right on scroll */
-  top: 1rem;            /* distance from top */
-  right: 1.5rem;        /* distance from right edge of window */
+  position: fixed;      /* stays at top-right on scroll */
+  top: 1rem;
+  right: 1.5rem;
   padding: 0.5rem 1rem;
   border-radius: 50px;
   border: 1px solid rgba(0,0,0,0.15);
@@ -78,13 +88,8 @@ nav a:hover {
   font-weight: 600;
   color: #004d61;
   transition: background-color 0.3s, color 0.3s;
-  z-index: 2000;        /* above everything */
+  z-index: 2000;
 }
-#mode-toggle:hover {
-  background-color: #008080;
-  color: #ffffff;
-}
-
 #mode-toggle:hover {
   background-color: #008080;
   color: #ffffff;
@@ -209,3 +214,11 @@ body.dark-mode .subtopic-card { background: #2c2c2c; box-shadow: 0 6px 15px rgba
 body.dark-mode .subtopic-card h4 { color: #4fd5d5; }
 body.dark-mode footer { background: #2c2c2c; color: #ccc; border-top: 1px solid rgba(255,255,255,0.08); }
 body.dark-mode #mode-toggle { background-color: #22384d; color: #4fd5d5; border-color: rgba(255,255,255,0.15); }
+.section-content .image img {
+  /* Make images scale nicely inside compartments */
+.section-content .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  display: block;
+}

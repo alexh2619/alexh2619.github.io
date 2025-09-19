@@ -1,35 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Computer Controlled Cutting | James</title>
-  <link rel="stylesheet" href="../../styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Computer Controlled Cutting • InnoLab</title>
+  <link rel="stylesheet" href="../../styles.css" />
 </head>
 <body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="mode-toggle">Light</button>
+
+  <!-- Header -->
   <header>
-    <h1>InnoLab • Portfolio</h1>
+    <h1>InnoLab</h1>
     <nav>
       <a href="../../index.html">Home</a>
-      <a href="senior.html">Senior Design</a>
-      <a href="mini.html">Mini Fab</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+      <a href="../../senior-design.html">Senior Design Project</a>
+      <a href="../../mini-projects.html">Mini Fabrication Projects</a>
+      <a href="../../about.html">About</a>
+      <a href="../../contact.html">Contact</a>
     </nav>
   </header>
 
-  <section>
-    <h2>Computer Controlled Cutting</h2>
-    <div class="section-content">
-      <div class="text">
-        <p>Write about your laser cutting or vinyl cutting project here.</p>
-      </div>
-      <div class="image">Image Placeholder</div>
-    </div>
-  </section>
+  <main>
+    <!-- Hero / Page Intro -->
+    <section class="hero">
+      <h1>Computer Controlled Cutting</h1>
+      <p>Laser cutting and vinyl cutting experiments, design tests, and final outcomes.</p>
+    </section>
 
+    <!-- Main Text -->
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This section documents my process for the computer-controlled cutting assignment. 
+        Here I explore kerf tests, design constraints, and final fabrication results.
+        Materials used include plywood, acrylic, and vinyl, with machines such as the laser cutter 
+        and Cricut vinyl cutter.
+      </p>
+    </section>
+
+    <!-- Gallery -->
+    <section>
+      <h2>Gallery</h2>
+      <div class="subtopic-grid">
+        <div class="subtopic-card">
+          <img src="../images/cutting-01.jpg" alt="Design file">
+          <p>Vector design file (SVG/DXF) before cutting.</p>
+        </div>
+        <div class="subtopic-card">
+          <img src="../images/cutting-02.jpg" alt="Kerf test">
+          <p>Kerf test to measure material tolerance.</p>
+        </div>
+        <div class="subtopic-card">
+          <img src="../images/cutting-03.jpg" alt="Laser cutting">
+          <p>Laser in operation — testing speed and power settings.</p>
+        </div>
+        <div class="subtopic-card">
+          <img src="../images/cutting-04.jpg" alt="Parts cut">
+          <p>Freshly cut parts on the bed of the laser cutter.</p>
+        </div>
+        <div class="subtopic-card">
+          <img src="../images/cutting-05.jpg" alt="Assembly test">
+          <p>Assembly test of the press-fit parts.</p>
+        </div>
+        <div class="subtopic-card">
+          <img src="../images/cutting-06.jpg" alt="Final prototype">
+          <p>Final prototype assembled from laser-cut components.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 InnoLab | Portfolio</p>
+    <p>&copy; 2025 Alexander Hernandez. All rights reserved.</p>
   </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById('mode-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = 
+        document.body.classList.contains('dark-mode') ? 'Dark' : 'Light';
+    });
+  </script>
 </body>
 </html>
